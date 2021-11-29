@@ -1240,6 +1240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cross Road (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 146542, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1610,6 +1614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Join Road (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -1979,6 +1987,10 @@ PrefabInstance:
     - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_Name
       value: Freeway Join Road (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 454804, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_RootOrder
@@ -2794,6 +2806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freeway Join Road (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 454804, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -3385,6 +3401,10 @@ PrefabInstance:
     - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_Name
       value: Road Join Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
@@ -4274,6 +4294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Join Road (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -5014,6 +5038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freeway Join Road (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 454804, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -5235,6 +5263,10 @@ PrefabInstance:
     - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_Name
       value: Road Join Road (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 171770, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
@@ -5753,6 +5785,10 @@ PrefabInstance:
     - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_Name
       value: Freeway Join Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 145004, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 454804, guid: b74054c7819af8a458ae5a11853280ac, type: 3}
       propertyPath: m_RootOrder
@@ -6568,6 +6604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cross Road
       objectReference: {fileID: 0}
+    - target: {fileID: 146542, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -6631,6 +6671,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
   m_PrefabInstance: {fileID: 856983244822938146}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &856983244822822476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 146542, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
+  m_PrefabInstance: {fileID: 856983244822938146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!191 &1696770936052846225
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856983244822822476}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 856983243279627866}
+  m_End: {fileID: 856983244146048004}
+  m_CostOverride: -1
+  m_BiDirectional: 0
+  m_Activated: 1
+  m_AutoUpdatePositions: 0
 --- !u!1001 &856983244837282423
 PrefabInstance:
   m_ObjectHideFlags: 0

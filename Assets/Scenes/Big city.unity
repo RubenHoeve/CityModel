@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.74
+    agentRadius: 0.98
     agentHeight: 0.4
     agentSlope: 5.5
     agentClimb: 0.01
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.24666667
+    cellSize: 0.32666668
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -5413,6 +5413,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 73575124}
     m_Modifications:
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.023160577
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -24.999586
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0015440919
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -3.4924594e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 856983244823160572, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.177
+      objectReference: {fileID: 0}
     - target: {fileID: 5333432185034081865, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
       propertyPath: m_Name
       value: suburb (3)
@@ -10156,6 +10184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 73575124}
     m_Modifications:
+    - target: {fileID: 856983244822822476, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5333432185034081865, guid: 4705041db38f7f34e9427b40ac778a66, type: 3}
       propertyPath: m_Name
       value: suburb (1)
@@ -18576,7 +18608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8941745815651062073, guid: 4cf32ad91d2f8de40902bc233d098e00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -227.8
+      value: -163.9
       objectReference: {fileID: 0}
     - target: {fileID: 8941745815651062073, guid: 4cf32ad91d2f8de40902bc233d098e00, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18584,7 +18616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8941745815651062073, guid: 4cf32ad91d2f8de40902bc233d098e00, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 83.1
+      value: 84.6
       objectReference: {fileID: 0}
     - target: {fileID: 8941745815651062073, guid: 4cf32ad91d2f8de40902bc233d098e00, type: 3}
       propertyPath: m_LocalRotation.w

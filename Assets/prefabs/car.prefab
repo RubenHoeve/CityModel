@@ -48,6 +48,7 @@ MonoBehaviour:
   goal:
   - {fileID: 0}
   agent: {fileID: 8941745815651062075}
+  baseSpeed: 39.99
 --- !u!195 &8941745815651062075
 NavMeshAgent:
   m_ObjectHideFlags: 0

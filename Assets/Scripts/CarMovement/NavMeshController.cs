@@ -7,6 +7,7 @@ public class NavMeshController : MonoBehaviour
 {
     public Transform[] goal;
     public NavMeshAgent agent;
+    public float baseSpeed = 20;
     Transform target;
 
     void Start()
@@ -25,6 +26,15 @@ public class NavMeshController : MonoBehaviour
                     agent.destination = goal[Mathf.FloorToInt(Random.Range(0,94.9f))].position;
                 }
             }
+        }
+        if (agent.isOnOffMeshLink)
+        {
+            agent.speed = baseSpeed / 3;
+            Debug.Log(agent.velocity);
+        }
+        else
+        {
+            agent.speed = baseSpeed;
         }
     }
     

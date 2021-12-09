@@ -8,9 +8,12 @@ public class NavMeshController : MonoBehaviour
     public Transform[] goal;
     public NavMeshAgent agent;
     public float averageSpeed = 20;
-    public float RandomMult = 5;
-    public bool randomSpeed;
+    public float averageAcceleration = 20;
+    public float RandomVMult = 5;
+    public float RandomAMult = 0.5f;
+    public bool AI;
     float maxSpeed;
+    float maxAcceleration;
     float speed;
     Transform target;
 
@@ -22,14 +25,17 @@ public class NavMeshController : MonoBehaviour
     void Start()
     {
         agent.isStopped = true;
-        if (randomSpeed)
+        if (!AI)
         {
-            maxSpeed = averageSpeed + (Random.Range(0f,1f) * averageSpeed * RandomMult);
+            maxSpeed = averageSpeed + (Random.Range(0f,1f) * averageSpeed * RandomVMult);
+            maxAcceleration = averageAcceleration + (Random.Range(0f, 1f) * averageAcceleration * RandomAMult);
         }
         else
         {
             maxSpeed = averageSpeed;
-        }  
+            maxAcceleration = averageAcceleration;
+        }
+        agent.acceleration = maxAcceleration;
     }
 
     public void Update()
@@ -77,22 +83,17 @@ public class NavMeshController : MonoBehaviour
                 float t = speed / agent.acceleration;
                 float stoppingD = 0.5f * agent.acceleration * t * t;
                 RaycastHit hit;
-                if(Physics.Raycast(transform.position+transform.forward*5+transform.up, transform.forward, out hit, stoppingD + 1)||(agent.destination - transform.position).magnitude < stoppingD)
-                {
-                    speed -= agent.acceleration * Time.deltaTime;
-                }
-                else
+                if (!Physics.Raycast(transform.position + (transform.forward * 5) + transform.up, transform.forward, out hit, stoppingD + 1) && agent.remainingDistance >= stoppingD)
                 {
                     speed += agent.acceleration * Time.deltaTime;
                 }
-                
+                else
+                {
+                    speed -= agent.acceleration * Time.deltaTime;
+                }
+
                 speed = Mathf.Clamp(speed, 0f, maxSpeed);
             }
-        }
-        
-        if (agent.path.corners.Length > 2)
-        {
-            
         }
         
 

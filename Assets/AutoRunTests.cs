@@ -37,6 +37,7 @@ public class AutoRunTests : MonoBehaviour
         if (!File.Exists(textfile))
         {
             File.WriteAllText(textfile, "RESULTS: \n\n");
+            File.AppendAllText(textfile, "\nAgentCount: " + agentCounts[Test] + "\n");
         }
         File.AppendAllText(textfile, time + " ; " + collisions + "\n");
     }
@@ -52,7 +53,7 @@ public class AutoRunTests : MonoBehaviour
         {
             index = 0;
             Test++;
-            File.AppendAllText(textfile, "\n AgentCount: " + agentCounts[Test] + "\n");
+            File.AppendAllText(textfile, "\nAgentCount: " + agentCounts[Test] + "\n");
         }
         foreach(GameObject agent in Agents)
         {

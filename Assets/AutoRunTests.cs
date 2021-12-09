@@ -54,6 +54,7 @@ public class AutoRunTests : MonoBehaviour
             index = 0;
             Test++;
             File.AppendAllText(textfile, "\nAgentCount: " + agentCounts[Test] + "\n");
+            timeCount = timesPerAgent * agentCounts[Test];
         }
         foreach(GameObject agent in Agents)
         {

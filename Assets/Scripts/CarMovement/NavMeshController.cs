@@ -8,10 +8,12 @@ public class NavMeshController : MonoBehaviour
     public Transform[] goal;
     public NavMeshAgent agent;
     public float averageSpeed = 20;
+    public float averageSteering = 250;
     public float averageAcceleration = 20;
     public float RandomVMult = 5;
     public float RandomAMult = 0.5f;
     public bool AI;
+    public int numTimes=12;
     float maxSpeed;
     float maxAcceleration;
     float speed;
@@ -27,8 +29,10 @@ public class NavMeshController : MonoBehaviour
         agent.isStopped = true;
         if (!AI)
         {
-            maxSpeed = averageSpeed + (Random.Range(0f,1f) * averageSpeed * RandomVMult);
-            maxAcceleration = averageAcceleration + (Random.Range(0f, 1f) * averageAcceleration * RandomAMult);
+            float r = Random.Range(-1f, 1f);
+            maxSpeed = averageSpeed - ( r * averageSpeed * RandomVMult);
+            agent.angularSpeed = averageSteering - (r * averageSteering * RandomVMult);
+            maxAcceleration = averageAcceleration - (Random.Range(-1f, 1f) * averageAcceleration * RandomAMult);
         }
         else
         {
@@ -54,7 +58,7 @@ public class NavMeshController : MonoBehaviour
                 else if(agent.velocity.sqrMagnitude == 0f)
                 {
                     agent.destination = goal[Mathf.FloorToInt(Random.Range(0,goal.Length))].position;
-                    data.Send(time);
+                    sendTime();
                     time = 0f;
                 }
             }
@@ -101,9 +105,20 @@ public class NavMeshController : MonoBehaviour
         
         
     }
+
+    private void sendTime()
+    {
+        if (numTimes > 0)
+        {
+            data.Send(time);
+            numTimes--;
+        }
+        
+    }
+
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "agent")
+        if (collision.gameObject.tag == "agent" && !agent.isOnOffMeshLink)
         {
             data.Collision();
         }

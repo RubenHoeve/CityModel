@@ -27,6 +27,7 @@ public class AutoRunTests : MonoBehaviour
             agentPrefab.transform.position = goals[Mathf.FloorToInt(Random.Range(0f, goals.Length))].position;
             agentPrefab.GetComponent<NavMeshController>().goal = goals;
             agentPrefab.GetComponent<NavMeshController>().data = data;
+            agentPrefab.GetComponent<NavMeshController>().numTimes = timesPerAgent;
             
             Agents.Add(Instantiate(agentPrefab));
         }

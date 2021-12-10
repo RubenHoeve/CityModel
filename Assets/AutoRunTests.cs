@@ -40,7 +40,7 @@ public class AutoRunTests : MonoBehaviour
             File.WriteAllText(textfile, "RESULTS: \n\n");
             File.AppendAllText(textfile, "\nAgentCount: " + agentCounts[Test] + "\n");
         }
-        File.AppendAllText(textfile, time + " ; " + collisions + "\n");
+        File.AppendAllText(textfile, time + "\t" + collisions + "\n");
     }
 
     public void NextTest()
